@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forme</title>
+  </head>
+  <body>
+    <h1>Formulaire HTML5 Avance</h1>
+    <h2>Merci de remplir les informations suivants</h2>
+    <form action="traitement.html" methode="post">
+      <fieldset style="width: 500px">
+        <legend>Information personnelles</legend>
+        <label for="nom">Nom</label>
+        <input
+          required
+          type="text"
+          id="nom"
+          name="nom"
+          minlenght="3"
+          pattern="[A-Za-z]+"
+          placeholder="entre votre nom"
+          required
+        />
+        <br /><br />
+        <label for="Prenom">Prenom</label>
+        <input
+          type="text"
+          id="Prenom"
+          name="nom"
+          minlenght="3"
+          placeholder="entre votre Prenom"
+          required
+        />
+        <br /><br />
+        <label for="tel">Saisir un telphone marocain</label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          pattern="^(+212|0)([5-7])(\d{8})$"
+          placeholder="+212 6xxxxxxxx"
+          required
+        />
+        <br /><br />
+
+        <label for="gender">Genre : </label>
+        <input type="radio" id="gender" name="gender" value="Homme" />
+        <label for="gender">Homme</label>
+        <input type="radio" id="gender" name="gender" value="Homme" />
+        <label for="gender">Femme</label>
+
+        <br /><br />
+        <label for="profession">profession : </label>
+        <select name="profession[]" id="profession">
+          <option value="Pro A">Profession A</option>
+          <option value="Pro B">Profession B</option>
+          <option value="Pro C">Profession C</option>
+        </select>
+
+        <br /><br />
+        <label for="localAD"> Adresse :</label>
+        <input type="text" id="localAD" name="localAD" maxlength="100" />
+
+        <br /><br />
+        <label for="Ville"> Ville :</label>
+        <input
+          type="text"
+          id="Ville"
+          name="Ville"
+          minlenght="3"
+          pattern="[A-Z a-z]+"
+          required
+        />
+
+        <br /><br />
+        <label for="CodePostal"> Code Postal :</label>
+        <input
+          type="number"
+          id="CodePostal"
+          name="CodePostal"
+          min="10000"
+          max="99999"
+          required
+        />
+
+        <br /><br />
+        <label for="pays"> Pays :</label>
+        <select name="pays[]" id="pays">
+          <option value="Maroc">Maroc</option>
+          <option value="USA">USA</option>
+          <option value="France">France</option>
+        </select>
+
+        <br /><br />
+        <fieldset>
+          <legend>Connaissances techniques</legend>
+          <label for="techniques"></label>
+          <input
+            type="checkbox"
+            id="techniques"
+            name="techniques"
+            value="HTML"
+          />
+          <lable for="techniques">HTML</lable>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="techniques"
+            name="techniques"
+            value="CSS"
+          />
+          <lable for="techniques">CSS</lable>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="techniques"
+            name="techniques"
+            value="JavaScript"
+          />
+          <lable for="techniques">JavaScript</lable>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="techniques"
+            name="techniques"
+            value="PHP"
+          />
+          <lable for="techniques">PHP</lable>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="techniques"
+            name="techniques"
+            value="Python"
+          />
+          <lable for="techniques">Python</lable>
+
+          <br />
+
+          <label for="NiveauHTML">Niveau en HTML :</label>
+          <input
+            type="range"
+            id="NiveauHTML"
+            name="NiveauHTML"
+            min="1"
+            max="10"
+          />
+        </fieldset>
+
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Envoyer" />
+        <label for="Réinitialiser"></label>
+        <input type="reset" value="Réinitialiser" />
+        <footer></footer>
+      </fieldset>
+    </form>
+  </body>
+</html>

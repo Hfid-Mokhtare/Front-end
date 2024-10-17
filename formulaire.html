@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+  <body>
+    <form enctype="multipart/form-data" action="traitement.php" method="post">
+      <p>
+        <leble for="nomUtilisateur"> Nom d'utilisateur : </leble>
+        <input type="text" nam="nomUtilisateur" />
+      </p>
+
+      Texte :
+      <textarea> </textarea>
+
+      <br />
+      <hr />
+
+      <p>
+        <lebel for="language">chose a language : </lebel>
+        <input type="radio" name="langage" value="html" />html css
+        <input type="radio" name="langage" value="Css" /> css
+        <input type="radio" name="langage" value="CPP" />CPP
+      </p>
+
+      <br />
+
+      <p>
+        <label for="quant">LEVEL in this language : </label>
+        <input
+          type="number"
+          id="quant"
+          name="quant"
+          min="0"
+          max="100"
+          step="10"
+          value="30"
+        />
+      </p>
+
+      <br />
+      <hr />
+
+      <p>
+        Vos marques preferees : <br />
+        <lebel for="marque"> Vos marques preferees : </lebel>
+        <input name="marque1" value="microsoft" type="checkbox" />Microsoft
+        <input name="marque2" value="Apple" type="checkbox" />Apple
+        <input name="marque3" value="google" type="checkbox" />google
+      </p>
+
+      <br />
+      <hr />
+
+      <p>
+        les langues que vous parlez : <br />
+        <select name="langue[]" size="3" multiple>
+          <option value="ar">Arabe</option>
+          <option value="fr">francais</option>
+          <option value="en">Anglais</option>
+        </select>
+      </p>
+
+      <br />
+      <hr />
+
+      <p>
+        <lable for="nom"> Nom : </lable>
+        <input type="text" name="nom" />
+        <input type="hidden" name="id" value="55" />
+        <button value="send">Envoier</button>
+      </p>
+
+      <p>
+        <lebel for="coulfav"> enter your color :</lebel>
+        <input type="color" id="coulfav" name="coulfav" />
+        <button value="send">Envoier</button>
+      </p>
+
+      <br />
+      <hr />
+
+      <label for="vol">Volume(entre 0 and 50) </label>
+      <input type="range" id="vol" name="vol" min="0" max="50" />
+
+      <br />
+      <hr />
+
+      <label for="anniv">Anniversaire : </label>
+      <input type="date" id="anniv" name="anniv" />
+
+      <br />
+      <hr />
+
+      <lable for="rdv"> Selectionner une heure</lable>
+      <input type="time" id="rdv" name="rdv" />
+
+      <br />
+      <hr />
+
+      <label for="sem">Choisir une semaine : </label>
+      <input type="week" id="sem" name="sem" />
+
+      <br />
+      <hr />
+
+      <label for="month">Choisir une monthe : </label>
+      <input type="month" id="month" name="month" />
+
+      <br />
+      <hr />
+
+      <label for="fichiers">selectionner un fichier : </label>
+      <input type="file" id="fichiers" name="fichiers" />
+
+      <br />
+      <hr />
+
+      <label for="email">saisir votre email : </label>
+      <input type="email" id="email" name="email" />
+
+      <br />
+      <hr />
+
+      <label for="phone">saisir votre phone : </label>
+      <input type="tel" id="phone" name="phone" pattern="+[0-9]{3} [0-9]{9}" />
+
+      <br />
+      <hr />
+
+      <label for="code_pays">Code pays : </label>
+      <input
+        type="text"
+        id="code_pays"
+        name="code_pays"
+        pattern="[A-Za-z]{4}"
+        title="Code pays a trois lettre"
+      />
+
+      <br />
+      <hr />
+
+      <label for="acc">A jouter votre page d'accueil : </label>
+      <input type="url" id="acc" name="acc" />
+
+      <br />
+      <hr />
+
+      <lable for="file">Filt </lable>
+      <input type="text" id="file" name="file" readonly="mohamed ali zeggaf" />
+
+      <br />
+      <hr />
+
+      <lable for="phone">Saisir un numero de telephone : </lable>
+      <input type="tel" id="phone" name="phone" placeholder="06xxxxxxxx" />
+
+      <br />
+      <hr />
+
+      <lable for="frame">Nom : </lable>
+      <input type="text" id="frame" name="frame" autofocus />
+      <lable for="lname">Prenom : </lable>
+      <input type="text" id="lname" name="lname" />
+
+      <br />
+      <hr />
+
+      <input list="navigateur" />
+      <datalist id="navigateur">
+        <option value="internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="chrom"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+
+      <fieldset style="width: 50">
+        <legend>Identite</legend>
+        <lable for="nom">nom : </lable>
+        <input type="text" id="nom" name="nom" />
+      </fieldset>
+
+      <br /><br />
+      <button value="send">Envoier</button>
+      <input type="submit" value="submit" />
+    </form>
+
+    <form action="https://www.google.com/search" method="get">
+      <label for="gsearch">Recherche Google</label>
+      <input type="search" id="gsearch" name="q" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulaire</h1>
+    <form action="traitement.php" method="post">
+      <table border="1" align="center">
+        <tr>
+          <td>Nom</td>
+          <td>
+            <label for="nom"></label>
+            <input
+              required
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="entre votre nom"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Prenom</td>
+          <td>
+            <label for="Prenom"></label>
+            <input
+              type="text"
+              id="Prenom"
+              name="nom"
+              placeholder="entre votre Prenom"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Sex</td>
+          <td>
+            <label for="sexe"></label>
+            <input type="radio" id="masculin" name="sexe" checked />
+            <label for="masculin">masculin</label>
+            <input type="radio" id="fumunin" name="sexe" />
+            <label for="fumunin">fumunin</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Date de naisance</td>
+          <td>
+            <label for="naissence"></label>
+            <input type="date" id="naissence" name="naissence" />
+          </td>
+        </tr>
+        <tr>
+          <td>Niveau d'etude</td>
+          <td>
+            <input list="Netude" placeholder="License" />
+            <datalist id="Netude" size="3">
+              <option value="back">back</option>
+              <option value="License" selected>License</option>
+              <option value="phd">doctora</option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>Specialite</td>
+          <td>
+            <input list="Specialite" placeholder="Shoisir une specialite" />
+            <datalist id="Specialite">
+              <option value="Develepment Digitale"></option>
+              <option value="Infra structure Digitale"></option>
+              <option value="production graphic"></option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>Telephone</td>
+          <td>
+            <label for="tel"></label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              pattern="+[0-9]{3} [0-9]{9}"
+              placeholder="+212 6xxxxxxxx"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Exemple@domaine.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Mot de passe</td>
+          <td>
+            <label for="password"></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Mot de passe securise"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Langues preferes</td>
+          <td>
+            <label for="Langues"></label>
+            <input
+              type="checkbox"
+              id="Langues1"
+              name="fr"
+              checked
+            />Francais<br />
+            <input type="checkbox" id="Langues2" name="an" />Anglais<br />
+            <input type="checkbox" id="Langues3" name="es" />Espagnol<br />
+            <input
+              type="checkbox"
+              id="Langues4"
+              name="al"
+            />Allemand<br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Adresse</td>
+          <td>
+            <label for="adresse"></label>
+            <textarea
+              type="text"
+              id="adresse"
+              name="adresse"
+              placeholder="Enter votre adresse complete"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Photo</td>
+          <td>
+            <label for="photo"></label>
+            <input type="file" id="photo" name="photo" />
+          </td>
+        </tr>
+        <tr>
+          <td>Accepter les termes et condition</td>
+          <td>
+            <label for="termes"></label>
+            <input type="checkbox" id="termes" name="termes" />J'accespte les
+            termes et les condition
+          </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2">
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit" />
+            <input type="reset" id="res" name="res" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
